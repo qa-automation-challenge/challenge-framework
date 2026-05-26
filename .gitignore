@@ -1,0 +1,8 @@
+node_modules
+playwright-report
+test-results
+.vscode
+.package-lock.json
+
+//the .env file is included in the repository, but in real projects, it should be added to .gitignore to avoid exposing sensitive information
+//.env
