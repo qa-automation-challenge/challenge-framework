@@ -14,7 +14,7 @@ This repository contains the source code and resources for a challenge-based pro
 
 ## Project Structure
 
-```text
+```
 challenge-framework/
 │
 ├── src/
