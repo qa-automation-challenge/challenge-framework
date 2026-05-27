@@ -1,5 +1,5 @@
-import { Locator, Page } from "@playwright/test";
-import { BasePage } from "./BasePage";
+import { Locator, Page } from '@playwright/test';
+import { BasePage } from './BasePage';
 
 export class UpBarComponent extends BasePage {
   readonly userOptions: Locator;
@@ -7,7 +7,7 @@ export class UpBarComponent extends BasePage {
   constructor(page: Page) {
     super(page);
 
-    this.userOptions = this.page.locator(".oxd-userdropdown-tab");
+    this.userOptions = this.page.locator('.oxd-userdropdown-tab');
   }
 
   async clickInUserOptions() {

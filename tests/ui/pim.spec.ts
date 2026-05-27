@@ -27,7 +27,7 @@ test('Search employee', async ({ page }) => {
   await pimPage.verifyEmployeeTableVisible();
 });
 
-//B2.7  
+//B2.7
 test('Add employee', async ({ page }) => {
   const sidebar = new SidebarComponent(page);
   const pimPage = new PimPage(page);
@@ -36,10 +36,7 @@ test('Add employee', async ({ page }) => {
   await loginAsAdmin(page);
   await sidebar.navigate('PIM');
   await pimPage.clickAddEmployee();
-  await pimPage.addEmployee(
-    employee.firstName,
-    employee.lastName
-  );
+  await pimPage.addEmployee(employee.firstName, employee.lastName);
 
   await pimPage.verifyEmployeeCreated();
 });

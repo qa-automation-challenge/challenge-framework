@@ -7,8 +7,5 @@ export async function loginAsAdmin(page: Page) {
 
   await loginPage.goto();
 
-  await loginPage.login(
-    config.username,
-    config.password
-  );
+  await loginPage.login(config.username, config.password);
 }

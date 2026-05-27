@@ -8,6 +8,6 @@ test('Logout successfully', async ({ page }) => {
   await loginAsAdmin(page);
 
   await upBar.clickInUserOptions();
-  await upBar.clickByText("Logout");
+  await upBar.clickByText('Logout');
   await expect(page).toHaveURL(/login/);
 });

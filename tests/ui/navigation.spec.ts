@@ -2,12 +2,7 @@ import { test, expect } from '@playwright/test';
 import { SidebarComponent } from '../../src/pages/SidebarComponent';
 import { loginAsAdmin } from '../../src/utils/authHelper';
 
-const menuItems = [
-  'Admin',
-  'PIM',
-  'Leave',
-  'Time',
-];
+const menuItems = ['Admin', 'PIM', 'Leave', 'Time'];
 
 //B3.9
 for (const item of menuItems) {
@@ -18,8 +13,6 @@ for (const item of menuItems) {
 
     await sidebar.navigate(item);
 
-    await expect(page).toHaveURL(
-      new RegExp(item.toLowerCase())
-    );
+    await expect(page).toHaveURL(new RegExp(item.toLowerCase()));
   });
 }

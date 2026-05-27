@@ -15,7 +15,7 @@ export class PimPage extends BasePage {
     super(page);
 
     this.employeeNameInput = page.locator(
-      '(//input[@placeholder="Type for hints..."])[1]'
+      '(//input[@placeholder="Type for hints..."])[1]',
     );
     this.searchButton = page.locator('button[type="submit"]');
     this.addEmployeeButton = page.locator('button:has-text("Add")');
